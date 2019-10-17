@@ -1,0 +1,19 @@
+import MySQLdb
+
+
+def max_indb ():
+	
+	db = MySQLdb.connect(host="host",    # host,localhost
+						user="xxx",         # username
+						passwd="xxx",        # password
+						db="xxx")            # name of the data base
+	cur = db.cursor()
+
+	result = cur.execute("SELECT max(`vote number`) FROM Legislation")
+	myresult = cur.fetchall() 
+	
+	#print(myresult[0])
+
+	int_result = int(myresult[0][0])
+
+	return int_result
