@@ -6,12 +6,13 @@ import re
 import statistics
 import csv
 
+#private creds here
 reddit = praw.Reddit(
-    client_id="XrQYx-cueSWK4g",
-    client_secret="NOEH8MAzS8aCWfcRfHA9zqjUalY",
-    user_agent="fire_comments",
-    username="datatribute",
-    password="datatribute",
+    client_id=,
+    client_secret=,
+    user_agent=,
+    username=,
+    password=,
 )
 
 subreddit = reddit.subreddit("financialindependence")
